@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .card {
+        @apply bg-[#333333] text-white text-xs uppercase px-1.5 py-0.5 rounded-sm;
+    }
+    .card-2 {
+        @apply flex flex-col md:flex-row md:p-4 p-2 items-center gap-6 border border-[#DDE2E5] mt-5 hover:scale-105 transition-all duration-300 cursor-pointer
+    }
+    .heading {
+        @apply text-[#333333] md:text-2xl text-xl font-semibold md:pt-8 pt-4 pb-4
+    }
+    .tag {
+        @apply bg-[#5677AC26] text-black text-xs md:text-sm uppercase px-1.5 py-0.5 rounded-sm hover:bg-black hover:text-white transition-all cursor-pointer dark:text-blue-300 dark:bg-gray-500 hover:dark:bg-gray-700 hover:dark:text-white
+    }
+    .news {
+        @apply bg-[#E6EBF3] text-center rounded-full w-full md:py-4 py-2 font-medium md:text-lg hover:bg-slate-300 transition-all hover:scale-105 duration-300 cursor-pointer
+    }
+}
